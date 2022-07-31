@@ -1,0 +1,15 @@
+D:\vStudio\Drugstore\DataBase\bin\Debug\net6.0\DataBase.deps.json
+D:\vStudio\Drugstore\DataBase\bin\Debug\net6.0\DataBase.dll
+D:\vStudio\Drugstore\DataBase\bin\Debug\net6.0\DataBase.pdb
+D:\vStudio\Drugstore\DataBase\bin\Debug\net6.0\Core.dll
+D:\vStudio\Drugstore\DataBase\bin\Debug\net6.0\Core.pdb
+D:\vStudio\Drugstore\DataBase\obj\Debug\net6.0\DataBase.csproj.AssemblyReference.cache
+D:\vStudio\Drugstore\DataBase\obj\Debug\net6.0\DataBase.GeneratedMSBuildEditorConfig.editorconfig
+D:\vStudio\Drugstore\DataBase\obj\Debug\net6.0\DataBase.AssemblyInfoInputs.cache
+D:\vStudio\Drugstore\DataBase\obj\Debug\net6.0\DataBase.AssemblyInfo.cs
+D:\vStudio\Drugstore\DataBase\obj\Debug\net6.0\DataBase.csproj.CoreCompileInputs.cache
+D:\vStudio\Drugstore\DataBase\obj\Debug\net6.0\DataBase.csproj.CopyComplete
+D:\vStudio\Drugstore\DataBase\obj\Debug\net6.0\DataBase.dll
+D:\vStudio\Drugstore\DataBase\obj\Debug\net6.0\refint\DataBase.dll
+D:\vStudio\Drugstore\DataBase\obj\Debug\net6.0\DataBase.pdb
+D:\vStudio\Drugstore\DataBase\obj\Debug\net6.0\ref\DataBase.dll

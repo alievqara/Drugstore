@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "D:\\vStudio\\Drugstore\\Manage\\Manage.csproj": {}
+    "D:\\vStudio\\Drugstore\\DataBase\\DataBase.csproj": {}
   },
   "projects": {
     "D:\\vStudio\\Drugstore\\Core\\Core.csproj": {
@@ -92,71 +92,6 @@
             "projectReferences": {
               "D:\\vStudio\\Drugstore\\Core\\Core.csproj": {
                 "projectPath": "D:\\vStudio\\Drugstore\\Core\\Core.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\vStudio\\Drugstore\\Manage\\Manage.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\vStudio\\Drugstore\\Manage\\Manage.csproj",
-        "projectName": "Manage",
-        "projectPath": "D:\\vStudio\\Drugstore\\Manage\\Manage.csproj",
-        "packagesPath": "C:\\Users\\aliev\\.nuget\\packages\\",
-        "outputPath": "D:\\vStudio\\Drugstore\\Manage\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\aliev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "D:\\vStudio\\Drugstore\\Core\\Core.csproj": {
-                "projectPath": "D:\\vStudio\\Drugstore\\Core\\Core.csproj"
-              },
-              "D:\\vStudio\\Drugstore\\DataBase\\DataBase.csproj": {
-                "projectPath": "D:\\vStudio\\Drugstore\\DataBase\\DataBase.csproj"
               }
             }
           }

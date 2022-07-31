@@ -11,19 +11,6 @@
         "runtime": {
           "bin/placeholder/Core.dll": {}
         }
-      },
-      "DataBase/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DataBase.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DataBase.dll": {}
-        }
       }
     }
   },
@@ -32,17 +19,11 @@
       "type": "project",
       "path": "../Core/Core.csproj",
       "msbuildProject": "../Core/Core.csproj"
-    },
-    "DataBase/1.0.0": {
-      "type": "project",
-      "path": "../DataBase/DataBase.csproj",
-      "msbuildProject": "../DataBase/DataBase.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Core >= 1.0.0",
-      "DataBase >= 1.0.0"
+      "Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -52,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\vStudio\\Drugstore\\Manage\\Manage.csproj",
-      "projectName": "Manage",
-      "projectPath": "D:\\vStudio\\Drugstore\\Manage\\Manage.csproj",
+      "projectUniqueName": "D:\\vStudio\\Drugstore\\DataBase\\DataBase.csproj",
+      "projectName": "DataBase",
+      "projectPath": "D:\\vStudio\\Drugstore\\DataBase\\DataBase.csproj",
       "packagesPath": "C:\\Users\\aliev\\.nuget\\packages\\",
-      "outputPath": "D:\\vStudio\\Drugstore\\Manage\\obj\\",
+      "outputPath": "D:\\vStudio\\Drugstore\\DataBase\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -79,9 +60,6 @@
           "projectReferences": {
             "D:\\vStudio\\Drugstore\\Core\\Core.csproj": {
               "projectPath": "D:\\vStudio\\Drugstore\\Core\\Core.csproj"
-            },
-            "D:\\vStudio\\Drugstore\\DataBase\\DataBase.csproj": {
-              "projectPath": "D:\\vStudio\\Drugstore\\DataBase\\DataBase.csproj"
             }
           }
         }

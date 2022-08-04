@@ -12,6 +12,11 @@ namespace Core.Constants
         {
 
             Logout = 0,
+            OwnerMenu = 1,
+            DrugstoreMenu = 2,
+            DruggistMenu = 3,
+            DrugMenu = 4,
+            AdminMenu = 5,
             Back = 9,
 
 
@@ -19,16 +24,20 @@ namespace Core.Constants
         public enum OptionsOwner
         {
 
+            AddOwner = 1,
+            UpdateOwner = 2,
+            DeleteOwner = 3,
+            GetAllOwner = 4,
 
         }
 
         public enum OptionsDrugstore
         {
-            
+
 
 
         }
 
-       
+
     }
 }

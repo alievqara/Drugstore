@@ -9,9 +9,12 @@ namespace Core.Entities
 {
     public class Owner : IEntity
     {
-        public int ID { get; set; } 
+        public int ID { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
+        public byte Age { get; set; }
+
+        //public Drugstore Drugstores { get; set; }
 
     }
 }

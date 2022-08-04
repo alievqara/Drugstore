@@ -16,6 +16,11 @@ namespace DataBase.Repositories.Implementations
             throw new NotImplementedException();
         }
 
+        public User Delete(User entity)
+        {
+            throw new NotImplementedException();
+        }
+
         public User Get(Predicate<User> filter)
         {
             if (filter == null)
@@ -26,6 +31,21 @@ namespace DataBase.Repositories.Implementations
             {
                 return DataBaseContext.Users.Find(filter);
             }
+        }
+
+        public List<User> GetAll(Predicate<User> filter = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public User Update(User entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IRepositories<User>.Delete(User entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }

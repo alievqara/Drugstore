@@ -20,11 +20,10 @@ namespace DataBase.Context
             Users = new List<User>();
 
 
-            string defaultUser = "admin";
-            string password = "admin";
+            string defaultUser = "user";
+            string password = "user";
 
-            string defaultUser1 = "user";
-            string password1 = "user";
+           
 
             var encryptPassword = PasswordsHashers.Encrypt(password);
 

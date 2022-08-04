@@ -46,24 +46,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aliev\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\DobbyWindows\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\vStudio\\Drugstore\\Manage\\Manage.csproj",
+      "projectUniqueName": "C:\\Users\\DobbyWindows\\Desktop\\Drugstore\\Manage\\Manage.csproj",
       "projectName": "Manage",
-      "projectPath": "D:\\vStudio\\Drugstore\\Manage\\Manage.csproj",
-      "packagesPath": "C:\\Users\\aliev\\.nuget\\packages\\",
-      "outputPath": "D:\\vStudio\\Drugstore\\Manage\\obj\\",
+      "projectPath": "C:\\Users\\DobbyWindows\\Desktop\\Drugstore\\Manage\\Manage.csproj",
+      "packagesPath": "C:\\Users\\DobbyWindows\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DobbyWindows\\Desktop\\Drugstore\\Manage\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\aliev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\DobbyWindows\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -77,11 +72,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\vStudio\\Drugstore\\Core\\Core.csproj": {
-              "projectPath": "D:\\vStudio\\Drugstore\\Core\\Core.csproj"
+            "C:\\Users\\DobbyWindows\\Desktop\\Drugstore\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\DobbyWindows\\Desktop\\Drugstore\\Core\\Core.csproj"
             },
-            "D:\\vStudio\\Drugstore\\DataBase\\DataBase.csproj": {
-              "projectPath": "D:\\vStudio\\Drugstore\\DataBase\\DataBase.csproj"
+            "C:\\Users\\DobbyWindows\\Desktop\\Drugstore\\DataBase\\DataBase.csproj": {
+              "projectPath": "C:\\Users\\DobbyWindows\\Desktop\\Drugstore\\DataBase\\DataBase.csproj"
             }
           }
         }

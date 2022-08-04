@@ -11,11 +11,13 @@ namespace Manage.Controllers
 {
     public class OwnerControllers
     {
-        private OwnerRepository _ownerRepository;
+        OwnerRepository _ownerRepository;
+        DrugstoreRepository _drugstoreRepository;
 
         public OwnerControllers()
         {
             _ownerRepository = new OwnerRepository();
+            _drugstoreRepository = new DrugstoreRepository();
         }
 
         #region AddOwnerRegion
@@ -79,15 +81,18 @@ namespace Manage.Controllers
                 result = byte.TryParse(agestring, out newage);
                 if (result)
                 {
+                    string oldName = owner.Name;
+                    string oldSurname = owner.Surname;
+                    byte oldAge = owner.Age;
+
                     var updatedOwner = new Owner();
                     {
-                        owner.ID = updatedOwner.ID;
-                        owner.Name = updatedOwner.Name;
-                        owner.Surname = updatedOwner.Surname;
-                        newage = updatedOwner.Age;
-                        ConsoleHelper.WriteTextWithColor(ConsoleColor.Cyan, $"Informations: {owner.Name} {owner.Surname} {owner.Age} is successfully updated to {updatedOwner.Name} {updatedOwner.Surname} {updatedOwner.Age}");
-
+                        owner.Name = name;
+                        owner.Surname = surname;
+                        owner.Age = newage;
                     }
+                    ConsoleHelper.WriteTextWithColor(ConsoleColor.Cyan, $"Informations: {oldName} {oldSurname} {oldAge} is successfully updated to {name} {surname} {newage}");
+                    _ownerRepository.Update(updatedOwner);
                 }
                 else
                 {
@@ -114,7 +119,15 @@ namespace Manage.Controllers
         OwnerList: ConsoleHelper.WriteTextWithColor(ConsoleColor.Cyan, "All Owners List: ");
             foreach (var ownr in owners)
             {
-                ConsoleHelper.WriteTextWithColor(ConsoleColor.Cyan, $"ID: {ownr.ID}, FullName: {ownr.Name} {ownr.Surname}");
+                if (owners != null)
+                {
+                    ConsoleHelper.WriteTextWithColor(ConsoleColor.Cyan, $"ID: {ownr.ID}, FullName: {ownr.Name} {ownr.Surname}");
+                }
+                else
+                {
+                    ConsoleHelper.WriteTextWithColor(ConsoleColor.DarkRed, "This Owners Doesn't Exist...");
+                    goto OwnerList;
+                }
             }
             ConsoleHelper.WriteTextWithColor(ConsoleColor.DarkGreen, "Pleace Select Owner ID Number: ");
             string enteredNumber = Console.ReadLine();
@@ -138,6 +151,7 @@ namespace Manage.Controllers
             else
             {
                 ConsoleHelper.WriteTextWithColor(ConsoleColor.DarkRed, "Pleace Write ID Number Correct Format...");
+                goto OwnerList;
             }
         }
 
@@ -152,7 +166,23 @@ namespace Manage.Controllers
             ConsoleHelper.WriteTextWithColor(ConsoleColor.Cyan, "All Owners List: ");
             foreach (var owner in owners)
             {
-                ConsoleHelper.WriteTextWithColor(ConsoleColor.Cyan, $"ID: {owner.ID}, FullName: {owner.Name} {owner.Surname}");
+                var drugstores = _drugstoreRepository.GetAll(d => d.ownerDrugstore.ID == owner.ID);
+                ConsoleHelper.WriteTextWithColor(ConsoleColor.Cyan, $"ID: {owner.ID}, FullName: {owner.Name} {owner.Surname} Age: {owner.Age}.   Drugstores List: ");
+                if (drugstores.Count > 0)
+                {
+                    foreach (var drugstore in drugstores)
+                    {
+                        ConsoleHelper.WriteTextWithColor(ConsoleColor.Cyan, drugstore.NameDrugstore);
+
+                    }
+
+                }
+                else
+                {
+                    ConsoleHelper.WriteTextWithColor(ConsoleColor.DarkRed, "The owner does not have a Drugstore...");
+
+                }
+
             }
         }
 

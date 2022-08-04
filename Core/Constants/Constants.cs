@@ -33,8 +33,12 @@ namespace Core.Constants
 
         public enum OptionsDrugstore
         {
-
-
+            CreateDrugstore = 1,
+            UpdateDrugstore = 2,
+            DeleteDrugstore = 3,
+            GetAllDrugstore = 4,
+            GetDrugstoreByOwner=5,
+            Sale = 6,
 
         }
 

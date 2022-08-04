@@ -12,12 +12,14 @@ namespace DataBase.Context
     {
         public static List<User> Users { get; set; }
         public static List<Owner> Owners { get; set; }
+        public static List<Drugstore> Drugstores { get; set; }
 
 
         static DataBaseContext()
         {
             Owners = new List<Owner>();
             Users = new List<User>();
+            Drugstores = new List<Drugstore>();
 
 
             string defaultUser = "user";

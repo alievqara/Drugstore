@@ -165,7 +165,7 @@ namespace Manage
                                                     goto DrugstoreMenu;
                                                     break;
                                                 case (int)OptionsDrugstore.GetDrugstoreByOwner:
-
+                                                    _drugstoreControllers.GetDrugstoreByOwner();
                                                     goto DrugstoreMenu;
                                                     break;
                                                 case (int)OptionsDrugstore.Sale:

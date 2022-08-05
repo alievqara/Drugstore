@@ -166,6 +166,7 @@ namespace Manage.Controllers
             ConsoleHelper.WriteTextWithColor(ConsoleColor.Cyan, "All Owners List: ");
             foreach (var owner in owners)
             {
+                
                 var drugstores = _drugstoreRepository.GetAll(d => d.ownerDrugstore.ID == owner.ID);
                 ConsoleHelper.WriteTextWithColor(ConsoleColor.Cyan, $"ID: {owner.ID}, FullName: {owner.Name} {owner.Surname} Age: {owner.Age}.   Drugstores List: ");
                 if (drugstores.Count > 0)

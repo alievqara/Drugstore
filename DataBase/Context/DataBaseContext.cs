@@ -13,6 +13,8 @@ namespace DataBase.Context
         public static List<User> Users { get; set; }
         public static List<Owner> Owners { get; set; }
         public static List<Drugstore> Drugstores { get; set; }
+        public static List<Druggist> Druggists { get; set; }
+        public static List<Drug> Drugs { get; set; }
 
 
         static DataBaseContext()
@@ -20,12 +22,14 @@ namespace DataBase.Context
             Owners = new List<Owner>();
             Users = new List<User>();
             Drugstores = new List<Drugstore>();
+            Druggists = new List<Druggist>();
+            Drugs = new List<Drug>();
 
 
             string defaultUser = "user";
             string password = "user";
 
-           
+
 
             var encryptPassword = PasswordsHashers.Encrypt(password);
 

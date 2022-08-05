@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Core.Entities
 {
-    public class Owner : IEntity
+    public class Drug : IEntity
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public string Surname { get; set; }
-        public byte Age { get; set; }
-        public List<Drugstore> drugstores { get; set; }
+        public double Price { get; set; }
+        public int Count { get; set; }
 
+        public List<Drugstore> drugstore { get; set; }
     }
 }

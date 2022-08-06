@@ -26,6 +26,9 @@ namespace DataBase.Repositories.Implementations
             {
                 druggist.Name = entity.Name;
                 druggist.Surname = entity.Name;
+                druggist.drugstore = entity.drugstore;
+                druggist.Age = entity.Age;
+                druggist.Enperience = entity.Enperience;
             }
             return druggist;
         }

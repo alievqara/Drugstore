@@ -26,6 +26,8 @@ namespace DataBase.Repositories.Implementations
             {
                 owners.Name = entity.Name;
                 owners.Surname = entity.Name;
+                owners.Age = entity.Age;
+                owners.drugstores = entity.drugstores;
             }
             return owners;
         }

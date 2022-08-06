@@ -16,7 +16,7 @@ namespace Core.Constants
             DrugstoreMenu = 2,
             DruggistMenu = 3,
             DrugMenu = 4,
-            AdminMenu = 5,
+            UserMenu = 5,
             Back = 9,
 
 
@@ -41,6 +41,35 @@ namespace Core.Constants
             Sale = 6,
 
         }
+
+        public enum OptionsDruggist
+        {
+            AddDruggist = 1,
+            UpdateDruggist = 2,
+            DeleteDruggist = 3,
+            GetAllDruggist = 4,
+            GetDruggistByDrugstore = 5,
+            
+
+        }
+
+        public enum OptionsDrug
+        {
+            CreateDrug = 1,
+            UpdateDrug = 2,
+            DeleteDrug = 3,
+            GetAllDrugs = 4,
+            GetDrugsDrugstores = 5,
+            Filter = 6,
+
+
+        }
+
+        public enum OptionsUser
+        {
+            CreateUser = 1,
+            DeleteUser = 2,
+        }        }
 
 
     }
